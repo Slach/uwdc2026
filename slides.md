@@ -70,7 +70,7 @@ layout: two-cols
 
 ::right::
 
-<img :src="'/images/slach.jpg'" class="rounded-xl shadow-lg mt-12 ml-8" style="max-height: 350px;" />
+<img :src="`${import.meta.env.BASE_URL}images/slach.jpg`" class="rounded-xl shadow-lg mt-12 ml-8" style="max-height: 350px;" />
 
 ---
 layout: default
@@ -88,7 +88,7 @@ layout: default
 </v-clicks>
 
 <div class="absolute bottom-2 left-1/2 -translate-x-1/2" style="pointer-events:none;">
-  <img :src="'/images/hads_up.png'" style="height: 280px; opacity: 0.9;" />
+  <img :src="`${import.meta.env.BASE_URL}images/hads_up.png`" style="height: 280px; opacity: 0.9;" />
 </div>
 
 
@@ -300,11 +300,11 @@ layout: default
 
 <div class="absolute left-0 right-0 flex items-center justify-center" style="top: 2rem; bottom: 0;">
   <v-switch>
-    <template #1><img :src="'/images/use_skills_1.png'" class="rounded-lg shadow-lg" style="max-width: 95%; max-height: 100%; object-fit: contain;" /></template>
-    <template #2><img :src="'/images/use_skills_2.png'" class="rounded-lg shadow-lg" style="max-width: 95%; max-height: 100%; object-fit: contain;" /></template>
-    <template #3><img :src="'/images/use_skills_4.png'" class="rounded-lg shadow-lg" style="max-width: 95%; max-height: 100%; object-fit: contain;" /></template>
-    <template #4><img :src="'/images/use_skills_5.png'" class="rounded-lg shadow-lg" style="max-width: 95%; max-height: 100%; object-fit: contain;" /></template>
-    <template #5><img :src="'/images/use_skills_6.png'" class="rounded-lg shadow-lg" style="max-width: 95%; max-height: 100%; object-fit: contain;" /></template>
+    <template #1><img :src="`${import.meta.env.BASE_URL}images/use_skills_1.png`" class="rounded-lg shadow-lg" style="max-width: 95%; max-height: 100%; object-fit: contain;" /></template>
+    <template #2><img :src="`${import.meta.env.BASE_URL}images/use_skills_2.png`" class="rounded-lg shadow-lg" style="max-width: 95%; max-height: 100%; object-fit: contain;" /></template>
+    <template #3><img :src="`${import.meta.env.BASE_URL}images/use_skills_4.png`" class="rounded-lg shadow-lg" style="max-width: 95%; max-height: 100%; object-fit: contain;" /></template>
+    <template #4><img :src="`${import.meta.env.BASE_URL}images/use_skills_5.png`" class="rounded-lg shadow-lg" style="max-width: 95%; max-height: 100%; object-fit: contain;" /></template>
+    <template #5><img :src="`${import.meta.env.BASE_URL}images/use_skills_6.png`" class="rounded-lg shadow-lg" style="max-width: 95%; max-height: 100%; object-fit: contain;" /></template>
   </v-switch>
 </div>
 
@@ -316,7 +316,7 @@ layout: section
 
 <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center">
   <a href="https://github.com/Altinity/Skills" target="_blank" rel="noopener">
-    <img :src="'/images/qr-altinity-skills.png'" class="w-40 h-40" />
+    <img :src="`${import.meta.env.BASE_URL}images/qr-altinity-skills.png`" class="w-40 h-40" />
   </a>
   <a href="https://github.com/Altinity/Skills" target="_blank" rel="noopener" class="text-xs text-gray-400 mt-1 hover:text-blue-400">github.com/Altinity/Skills</a>
 </div>
@@ -829,7 +829,7 @@ layout: section
 
 <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center">
   <a href="https://github.com/ClickHouse/agent-skills" target="_blank" rel="noopener">
-    <img :src="'/images/qr-clickhouse-agent-skills.png'" class="w-40 h-40" />
+    <img :src="`${import.meta.env.BASE_URL}images/qr-clickhouse-agent-skills.png`" class="w-40 h-40" />
   </a>
   <a href="https://github.com/ClickHouse/agent-skills" target="_blank" rel="noopener" class="text-xs text-gray-400 mt-1 hover:text-blue-400">github.com/ClickHouse/agent-skills</a>
 </div>
@@ -1636,7 +1636,7 @@ layout: end
 
 <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center">
   <a href="https://t.me/bloodjazman" target="_blank" rel="noopener">
-    <img :src="'/images/qr-telegram.png'" class="w-40 h-40" />
+    <img :src="`${import.meta.env.BASE_URL}images/qr-telegram.png`" class="w-40 h-40" />
   </a>
   <a href="https://t.me/bloodjazman" target="_blank" rel="noopener" class="text-xs text-gray-400 mt-1 hover:text-blue-400">t.me/bloodjazman</a>
 </div>
