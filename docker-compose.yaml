@@ -1,0 +1,25 @@
+services:
+  yandexgpt:
+    build: 
+      context: ~/src/github.com/sazonovanton/YandexGPT_to_OpenAI
+      dockerfile: Dockerfile
+    ports:
+      - "8520:8520"
+    environment:
+      - Y2O_SecretKey=${YANDEX_SECRET_KEY}
+      - Y2O_CatalogID=${YANDEX_CATALOG_ID}
+      - Y2O_Host=0.0.0.0
+      - Y2O_Port=8520
+
+  gigachat:
+    build:
+      context: ~/src/github.com/antonko/gigachat-adapter
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - GIGACHAT_CREDENTIALS=${GIGACHAT_CREDENTIALS}
+      - GIGACHAT_VERIFY_SSL_CERTS=False
+      - BEARER_TOKEN=${GIGACHAT_BEARER_TOKEN}
+      - no_proxy=localhost,127.0.0.1,*.orb.internal
+      - NO_PROXY=localhost,127.0.0.1,*.orb.internal
